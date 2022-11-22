@@ -10,10 +10,8 @@
   flex-wrap: wrap;
   gap: 20px;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  box-sizing: border-box;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .header-menu {
@@ -70,5 +68,15 @@
   .header-menu a {
     padding: 8px 12px;
     font-size: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    justify-content: center;
+  }
+
+  .header-menu {
+    justify-content: center;
   }
 }
