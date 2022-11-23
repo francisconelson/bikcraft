@@ -73,10 +73,10 @@
 
 @media (max-width: 500px) {
   .header {
-    justify-content: center;
+    justify-content: left;
   }
 
   .header-menu {
-    justify-content: center;
+    justify-content: left;
   }
 }
