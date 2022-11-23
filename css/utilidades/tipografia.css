@@ -61,4 +61,7 @@
   .font-2-l {
     font-size: 1.125rem;
   }
+  .font-1-l {
+    font: 400 1.2rem/1.5 "Poppins", sans-serif;
+  }
 }
