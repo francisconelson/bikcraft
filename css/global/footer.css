@@ -16,7 +16,7 @@
 
 .footer-contato li:nth-child(even) {
   border-bottom: 2px solid var(--cor-11);
-  width: 360px;
+  max-width: 360px;
   padding-bottom: 20px;
 }
 
