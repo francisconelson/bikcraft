@@ -104,7 +104,7 @@
 }
 
 .titulo p {
-  margin-bottom: 8pxpx;
+  margin-bottom: 8px;
 }
 
 @media (max-width: 800px) {
@@ -112,7 +112,7 @@
     padding-top: 40px;
     padding-bottom: 40px;
   }
-  .font-2-l-b {
+  .titulo-bg  p {
     font-size: 1rem;
     text-transform: lowercase;
     font-weight: 400;
