@@ -29,6 +29,9 @@
   text-transform: uppercase;
   letter-spacing: 0.015em;
 }
+.font-2-xl {
+  font: 500 2.25rem/1.33 "Roboto", sans-serif;
+}
 .font-1-l {
   font: 400 1.5rem/1.5 "Poppins", sans-serif;
 }
