@@ -1,5 +1,5 @@
 #contato {
-  background: var(--cor-1);
+  background: linear-gradient(var(--cor-11) 600px, var(--cor-1) 0px);
 }
 
 .contato {
@@ -11,7 +11,6 @@
 .contato-formulario {
   padding: 60px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  margin-bottom: 200px;
 }
 
 .contato-dados {
@@ -22,7 +21,6 @@
 .contato-formulario {
   background: var(--cor-0);
   border-radius: 0px 5px 5px 0px;
-
 }
 
 .contato-dados h2 {
@@ -34,7 +32,7 @@
   margin-bottom: 8px;
   margin-bottom: 32px;
   padding-left: 28px;
-  background: url('../../img/icones/local.svg') no-repeat 0px 1px;
+  background: url("../../img/icones/local.svg") no-repeat 0px 1px;
 }
 
 .contato-meios a {
@@ -45,11 +43,15 @@
 }
 
 .contato-meios a:first-child {
-  background: url('../../img/icones/email.svg') no-repeat 0px 2px;
+  background: url("../../img/icones/email.svg") no-repeat 0px 2px;
 }
 
-.contato-meios a:last-child{
-  background: url('../../img/icones/telefone.svg') no-repeat 0px 2px;
+.contato-meios a:hover {
+  color: var(--cor-0);
+}
+
+.contato-meios a:last-child {
+  background: url("../../img/icones/telefone.svg") no-repeat 0px 2px;
   margin-top: 32px;
 }
 
@@ -58,4 +60,27 @@
   gap: 32px;
   margin-top: 60px;
   padding-left: 28px;
+}
+
+@media (max-width: 800px) {
+  .contato {
+    grid-template-columns: 1fr;
+  }
+  .contato-dados,
+  .contato-formulario {
+    padding: 20px;
+  }
+  .contato-dados {
+    border-radius: 5px 5px 0px 0px;
+  }
+  .contato-formulario {
+    border-radius: 0px 0px 5px 5px;
+  }
+  .contato-dados h2,
+  .contato-redes {
+    margin-bottom: 32px;
+  }
+  .contato-redes {
+    margin-bottom: 12px;
+  }
 }
