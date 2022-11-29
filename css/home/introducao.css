@@ -1,7 +1,7 @@
 /* Introducao */
 
 .introducao-bg {
-  background-color: var(--cor-12);
+  background: var(--cor-12) url('../../img/dec/bottom-left.svg') no-repeat bottom 160px left 20px;
   color: var(--cor-0);
   box-shadow: 0 -120px var(--cor-0) inset;
 }
