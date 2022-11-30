@@ -20,16 +20,20 @@
   background-color: var(--cor-1);
 }
 
-.perguntas dt {
+.perguntas button {
   margin-bottom: 16px;
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: 8px;
   cursor: pointer;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
 }
 
-.perguntas dt::before {
+.perguntas button::before {
   content: "";
   width: 12px;
   height: 8px;
@@ -37,7 +41,7 @@
   background-color: var(--cor-p1);
 }
 
-.perguntas dt::after {
+.perguntas button::after {
   content: "";
   width: 14px;
   height: 6px;
@@ -46,8 +50,16 @@
   transition: 0.3s;
 }
 
-.perguntas dt:hover::after {
+.perguntas button:hover::after,
+.perguntas button[aria-expanded="true"]::after {
   transform: rotateX(180deg);
+}
+
+.js .perguntas dd {
+  display: none;
+}
+.js .perguntas dd.ativa {
+  display: block;
 }
 
 .perguntas dd {
